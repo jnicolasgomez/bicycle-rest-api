@@ -1,4 +1,5 @@
 import { Request, Response } from "express"
+import morgan from "morgan";
 import { insertBicycle, getBicycles, getBicycleById, updateBicycle, deleteBicycleById } from "../services/bicycle.service";
 import { handleHttp } from "../utils/error.handle"
 
@@ -33,6 +34,7 @@ const putBicycle = async ({params, body}: Request, res: Response) => {
 
 const postBicycle = async ({body}: Request, res: Response) => {
     try {
+        console.log(body);
         const response = await insertBicycle(body);
         res.send(response);
     } catch (e) {
@@ -49,5 +51,6 @@ const deleteBicycle = async ({params}: Request, res: Response) => {
         handleHttp(res,"ERROR_DELETE_ITEM", e);
     }
 }
+
 
 export {getBicycle, getAllBicycles, putBicycle, postBicycle, deleteBicycle}

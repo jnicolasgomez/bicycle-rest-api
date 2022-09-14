@@ -1,5 +1,6 @@
 import {Schema, Types, model, Model} from 'mongoose';
 import { Bicycle } from '../interfaces/bicycle.interface';
+import { Coordinate } from '../types/types';
 
 const BicycleSchema = new Schema<Bicycle>(
     {
@@ -11,8 +12,8 @@ const BicycleSchema = new Schema<Bicycle>(
             type: String,
             required: true
         },
-        ubication: {
-            type: String,
+        coordinates: {
+            type: [Number, Number],
             required: true
         },
     },
