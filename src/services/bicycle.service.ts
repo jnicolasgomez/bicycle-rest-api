@@ -32,4 +32,8 @@ const deleteBicycleById = async (id: string) => {
     return response;
 }
 
-export {insertBicycle, getBicycles, getBicycleById, updateBicycle, deleteBicycleById};
+const deleteAll = async () => {
+    return await BicycleModel.deleteMany({});
+}
+
+export {insertBicycle, getBicycles, getBicycleById, updateBicycle, deleteBicycleById, deleteAll};
