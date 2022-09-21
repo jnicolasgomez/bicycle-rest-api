@@ -13,7 +13,6 @@ const checkJwt = (req: Request, res: Response, next: NextFunction) => {
             .catch((e) => {
                 handleHttp(res, "INVALID_SESSION", e, 403);
             });
-            console.log(jwtByUser)
         }
     }catch (e) {
         handleHttp(res, "INVALID_SESSION", e, 400);
