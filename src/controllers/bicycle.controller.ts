@@ -1,7 +1,7 @@
-import { Request, Response } from "express"
+import { Request, Response } from "express";
 import morgan from "morgan";
 import { insertBicycle, getBicycles, getBicycleById, updateBicycle, deleteBicycleById, deleteAll } from "../services/bicycle.service";
-import { handleHttp } from "../utils/error.handle"
+import { handleHttp } from "../utils/error.handle";
 
 const getBicycle = async ({params}: Request, res: Response) => {
     try {
