@@ -4,5 +4,6 @@ export interface Bicycle {
     _id?: string,
     color: string,
     model: string,
-    coordinates: Coordinate
+    coordinates: Coordinate,
+    brand: string
 }
