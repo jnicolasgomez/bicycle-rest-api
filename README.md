@@ -24,3 +24,12 @@ PORT --> Default 3002
 DB_URI --> MongoDB Uri
 DB_URI_TEST --> Mongo test database uri
 ```
+
+## Architecture
+
+### Components Diagram
+![components_diagram](https://github.com/jnicolasgomez/bicycle-rest-api/blob/main/documentation/components_diagram.png)
+### Sequence Diagram
+![sequence_diagram](https://github.com/jnicolasgomez/bicycle-rest-api/blob/main/documentation/diagrama_secuencia.png)
+### Deployment diagram
+![technologies_diagram](https://github.com/jnicolasgomez/bicycle-rest-api/blob/main/documentation/technology_diagram.png)
